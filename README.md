@@ -5,7 +5,7 @@ This is a sequence of progressive enhancements, taking a static HTML site into a
 
 The website is about movies and user voted stars.
 
-![screenshot list of moives](screenshots/movieList.png)
+![screenshot list of moives](screenshots/list.png)
 
 ## An OO-PHP first approach
 
