@@ -69,7 +69,19 @@ If you've not programmed with an OO language before, you may wish to first work 
 
 6. Add PDO DB library and get Movies from database table
 
-    - https://github.com/dr-matt-smith/evote-movie-2022-06-movie-db-table
+   - add library `pdo-crud-for-free-repositories` to the project using Composer:
+
+   - create a file `.env` containing your MySQL database credentials, for example:
+
+   - create a new class `/src/MovieRepository.php` and make this empty class inherit from ` Mattsmithdev\PdoCrudRepo\DatabaseTableRepository`:
+
+   - create a new directory `/dbsetup`, containing file `migrationsAndFixtures.php` to create/reset a DB table `movie`, then get the array of `Movie` objects from a `MovieFixtures` object, and insert all those objects into the database
+
+   - at the command line, execute PHP script `/dbsetup/migrationAndFixtures.php`. If no schema matching the name in your `.env` file exists, then a new schema of the specified name will be created, and a messasge displayed to confirm this action:
+
+   - refactor the `list()` method of class `MainController` to create a repository object, and dynamically retrieve all `Movie` objects from the MySQL database:
+  
+   - https://github.com/dr-matt-smith/evote-movie-2022-06-movie-db-table
 
 
 
