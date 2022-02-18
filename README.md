@@ -105,3 +105,19 @@ If you've not programmed with an OO language before, you may wish to first work 
    - add to`/src/MainController.php` new method `delete(...)`, which uses the argument received to invoke the delete method of a `MovieRepository` object. 
 
    - https://github.com/dr-matt-smith/evote-movie-2022-08-crud-delete
+
+9. CRUD - adding a form for a NEW Movie to be added to the database
+
+   - create new template `/templates/new_form.php` to display a form for a new Movie with a submission action of `/?action=process_new`
+   
+   - add to `/templates/list.php` a link `create a NEW Movie` whose link URL is `/?action=new_form`
+   
+   - add a new case to the front controller login in `/src/Application.php`. When the URL action is `new_form`, and whose action is to invoke method `form()` in `MainController`
+   
+   - add to`/src/MainController.php` new method `form()` to display the new form template
+   
+   - add a new `process_new` case to the front controller login in `/src/Application.php`
+   
+   - add to`/src/MainController.php` new method `processNewMovie(...)`, which takes in the values received from the submitted form, creates a new `Movie` object,
+   
+   - https://github.com/dr-matt-smith/evote-movie-2022-09-crud-create
