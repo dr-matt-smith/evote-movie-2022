@@ -84,4 +84,12 @@ If you've not programmed with an OO language before, you may wish to first work 
    - https://github.com/dr-matt-smith/evote-movie-2022-06-movie-db-table
 
 
+7. Adding current page link styling in the navbar
 
+   - add to the beginning of `/templates/_header.php` a set of variables, one for each nav link.
+   
+   - In the nav-bar links themselves of template `/templates/_header.php`, a CSS `class` is added to each link, whose value will be either an empty string or the value (`current_page`) from the style variable for each link.
+   
+   - add to the beginning of each page template a statement to set the nav style link variable for that page to be the string `current_page`.
+
+   - https://github.com/dr-matt-smith/evote-movie-2022-07-current-page-link-styling
