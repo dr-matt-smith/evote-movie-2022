@@ -93,3 +93,15 @@ If you've not programmed with an OO language before, you may wish to first work 
    - add to the beginning of each page template a statement to set the nav style link variable for that page to be the string `current_page`.
 
    - https://github.com/dr-matt-smith/evote-movie-2022-07-current-page-link-styling
+
+8. CRUD - adding a delete link on the Movie list page
+
+   - add to `/templates/list.php` an extra table column heading `Actions`
+   
+   - add to `/templates/list.php` an extra table column data cell being the word `DELETE` whose link URL is `href="/?action=delete&id=<movieIdHere>`
+   
+   - add a new case to the front controller login in `/src/Application.php`. When the URL action is `delete`, a value for `id` should be extracted from the URL, and passed to `MainController` method `delete(...)`
+   
+   - add to`/src/MainController.php` new method `delete(...)`, which uses the argument received to invoke the delete method of a `MovieRepository` object. 
+
+   - https://github.com/dr-matt-smith/evote-movie-2022-08-crud-delete
