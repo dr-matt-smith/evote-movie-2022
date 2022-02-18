@@ -96,6 +96,8 @@ If you've not programmed with an OO language before, you may wish to first work 
 
 8. CRUD - adding a delete link on the Movie list page
 
+   ![screenshot list of moives with DELETE link](screenshots/delete_links.png)
+
    - add to `/templates/list.php` an extra table column heading `Actions`
    
    - add to `/templates/list.php` an extra table column data cell being the word `DELETE` whose link URL is `href="/?action=delete&id=<movieIdHere>`
@@ -107,6 +109,8 @@ If you've not programmed with an OO language before, you may wish to first work 
    - https://github.com/dr-matt-smith/evote-movie-2022-08-crud-delete
 
 9. CRUD - adding a form for a NEW Movie to be added to the database
+
+   ![screenshot new Movie form](screenshots/new_movie_form.png)
 
    - create new template `/templates/new_form.php` to display a form for a new Movie with a submission action of `/?action=process_new`
    
