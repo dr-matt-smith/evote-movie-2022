@@ -1,5 +1,7 @@
 # evote-movie-2022
 
+
+
 ## About
 This is a sequence of progressive enhancements, taking a static HTML site into an authenticated modern PHP MVC website
 
@@ -125,3 +127,11 @@ If you've not programmed with an OO language before, you may wish to first work 
    - add to`/src/MainController.php` new method `processNewMovie(...)`, which takes in the values received from the submitted form, creates a new `Movie` object,
    
    - https://github.com/dr-matt-smith/evote-movie-2022-09-crud-create
+
+
+
+## Taking things further ...
+
+To get ideas of how to take things further see details from the 2020 version of this step-by-step project:
+
+[https://github.com/dr-matt-smith/evote-movie-2020](https://github.com/dr-matt-smith/evote-movie-2020)
